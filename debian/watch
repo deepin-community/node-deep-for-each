@@ -1,0 +1,7 @@
+version=4
+opts=\
+repacksuffix=+dfsg,\
+repack,compression=xz,\
+dversionmangle=auto,\
+filenamemangle=s/.*\/v?([\d\.-]+)\.tar\.gz/node-deep-for-each-$1.tar.gz/ \
+ https://github.com/IndigoUnited/js-deep-for-each/tags .*/archive/.*/v?([\d\.]+).tar.gz

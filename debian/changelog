@@ -1,0 +1,63 @@
+node-deep-for-each (3.0.0-3) unstable; urgency=medium
+
+  * Team upload
+
+  [ Debian Janitor ]
+  * Set upstream metadata fields: Bug-Submit.
+
+  [ Yadd ]
+  * Bump debhelper compatibility level to 13
+  * Modernize debian/watch
+  * Fix GitHub tags regex
+  * Use dh-sequence-nodejs
+  * Declare compliance with policy 4.6.0
+  * Replace embedded build modules by dependencies to
+    node-jest-debbundle and node-babel-plugin-lodash
+  * Enable upstream test using jest
+
+ -- Yadd <yadd@debian.org>  Fri, 24 Sep 2021 17:43:42 +0200
+
+node-deep-for-each (3.0.0-2) unstable; urgency=medium
+
+  * Team upload
+  * Build with babel-plugin-add-module-exports (Closes: #961646)
+
+ -- Xavier Guimard <yadd@debian.org>  Wed, 27 May 2020 11:51:55 +0200
+
+node-deep-for-each (3.0.0-1) unstable; urgency=medium
+
+  * Team upload
+  * Declare compliance with policy 4.5.0
+  * New upstream version 3.0.0
+  * Embed some little module for build
+  * Drop test (jest not packaged)
+  * Build with babel7
+
+ -- Xavier Guimard <yadd@debian.org>  Tue, 26 May 2020 11:08:43 +0200
+
+node-deep-for-each (1.0.6+dfsg-2) unstable; urgency=medium
+
+  * Team upload
+
+  [ Jelmer Vernooĳ ]
+  * Use secure copyright file specification URI.
+
+  [ Xavier Guimard ]
+  * Bump debhelper compatibility level to 12
+  * Declare compliance with policy 4.4.0
+  * Add debian/gbp.conf
+  * Move installed files to /usr/share/nodejs
+  * Add upstream/metadata
+  * Declare compliance with policy 4.4.1
+  * Add "Rules-Requires-Root: no"
+  * Use pkg-js-tools auto test & install
+  * Update VCS fields to salsa
+  * Update copyright
+
+ -- Xavier Guimard <yadd@debian.org>  Sun, 05 Jan 2020 17:52:16 +0100
+
+node-deep-for-each (1.0.6+dfsg-1) unstable; urgency=low
+
+  * Initial release (Closes: #876736)
+
+ -- Pirate Praveen <praveen@debian.org>  Mon, 25 Sep 2017 22:58:12 +0530

@@ -1,0 +1,36 @@
+Source: node-deep-for-each
+Maintainer: Debian Javascript Maintainers <pkg-javascript-devel@lists.alioth.debian.org>
+Uploaders: Pirate Praveen <praveen@debian.org>
+Section: javascript
+Testsuite: autopkgtest-pkg-nodejs
+Priority: optional
+Build-Depends:
+ debhelper-compat (= 13),
+ , dh-sequence-nodejs
+ , node-babel-plugin-add-module-exports
+ , node-babel-plugin-lodash
+ , node-babel7
+ , node-jest-debbundle
+ , node-lodash-packages
+ , jest <!nocheck>
+Standards-Version: 4.6.0
+Vcs-Browser: https://salsa.debian.org/js-team/node-deep-for-each
+Vcs-Git: https://salsa.debian.org/js-team/node-deep-for-each.git
+Homepage: https://github.com/IndigoUnited/js-deep-for-each#readme
+Rules-Requires-Root: no
+Provides: autopkgtest-pkg-nodejs
+
+Package: node-deep-for-each
+Architecture: all
+Depends:
+ ${misc:Depends}
+ , node-lodash-packages
+Description: Recursively iterates collection values (arrays and objects)
+ The iteration is made using a deep-first algorithm.
+ .
+ Depth-first search (DFS) is an algorithm for traversing or searching tree or
+ graph data structures. One starts at the root (selecting some arbitrary node
+ as the root in the case of a graph) and explores as far as possible along each
+ branch before backtracking.
+ .
+ Node.js is an event-based server-side JavaScript engine.
